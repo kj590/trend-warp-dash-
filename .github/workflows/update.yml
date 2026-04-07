@@ -1,0 +1,24 @@
+name: Update
+on:
+  schedule: [{cron: '0 */12 * * *'}] # 12時間ごと
+  workflow_dispatch:
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: {python-version: '3.9'}
+      - run: |
+          pip install -r requirements.txt
+          playwright install chromium
+      - name: Run
+        env: {YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}}
+        run: python collect_trends.py
+      - name: Push
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@example.com"
+          git add data.json
+          git commit -m "update" || exit 0
+          git push
