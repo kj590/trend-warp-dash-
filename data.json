@@ -1,17 +1,17 @@
 [
   {
-    "keyword": "猫ミーム",
-    "yt_count": 45,
-    "warp_score": 10
-  },
-  {
     "keyword": "ライフハック",
     "yt_count": 45,
     "warp_score": 10
   },
   {
     "keyword": "ダンス",
-    "yt_count": 49,
-    "warp_score": 2
+    "yt_count": 48,
+    "warp_score": 4
+  },
+  {
+    "keyword": "猫ミーム",
+    "yt_count": 45,
+    "warp_score": 10
   }
 ]
