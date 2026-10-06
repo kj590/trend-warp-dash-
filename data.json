@@ -1,5 +1,10 @@
 [
   {
+    "keyword": "ダンス",
+    "yt_count": 46,
+    "warp_score": 8
+  },
+  {
     "keyword": "ライフハック",
     "yt_count": 50,
     "warp_score": 0
@@ -8,10 +13,5 @@
     "keyword": "猫ミーム",
     "yt_count": 47,
     "warp_score": 6
-  },
-  {
-    "keyword": "ダンス",
-    "yt_count": 48,
-    "warp_score": 4
   }
 ]
